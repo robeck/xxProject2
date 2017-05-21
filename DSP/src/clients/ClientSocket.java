@@ -70,6 +70,8 @@ public class ClientSocket {
 		options.addOption(tags);
 		Option uri = Option.builder("uri").argName("args").hasArg().desc("resource URI").build();
 		options.addOption(uri);	
+		Option secure = Option.builder("secure").argName("args").hasArg().decs("secure client connect..").build();
+		options.addOption(secure);
 		
 		// Parse the program arguments  
 		CommandLine commandLine = parser.parse( options, args );  
@@ -80,6 +82,13 @@ public class ClientSocket {
 		if(commandLine.hasOption("host")){
 			 ip = commandLine.getOptionValue("host");
 		}
+		
+		if(commandLine.hasOption("secure")){
+			try{
+				SSLSocketFactory sslsocketfactor = 
+			}
+		}
+		
 		try{
 		//•	创建一个 Socket 实例：构造函数向指定的远程主机和端口建立一个 TCP 连接；
 		Socket client = new Socket(ip,portConnect);
