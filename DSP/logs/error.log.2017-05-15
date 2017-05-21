@@ -1,0 +1,39 @@
+2017-05-15 21:01:48  [ main:0 ] - [ ERROR ]  error test log
+2017-05-15 21:10:34  [ Thread-1:19588 ] - [ ERROR ]  java.io.EOFException
+2017-05-15 21:10:43  [ Thread-2:29427 ] - [ ERROR ]  java.lang.UnsupportedOperationException: JsonObject
+2017-05-15 21:11:08  [ main:13 ] - [ ERROR ]  fail to create server socket
+java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:128)
+	at javax.net.DefaultServerSocketFactory.createServerSocket(ServerSocketFactory.java:218)
+	at server.Server.main(Server.java:77)
+2017-05-15 21:11:27  [ Thread-1:11069 ] - [ ERROR ]  java.lang.UnsupportedOperationException: JsonObject
+2017-05-15 21:11:56  [ Thread-2:40047 ] - [ ERROR ]  java.lang.UnsupportedOperationException: JsonObject
+2017-05-15 21:13:04  [ Thread-1:42167 ] - [ ERROR ]  java.io.EOFException
+2017-05-15 21:13:12  [ Thread-2:50758 ] - [ ERROR ]  java.lang.UnsupportedOperationException: JsonObject
+2017-05-15 21:13:52  [ Thread-3:90233 ] - [ ERROR ]  java.lang.UnsupportedOperationException: JsonObject
+2017-05-15 22:15:39  [ Thread-1:27414 ] - [ ERROR ]  java.lang.UnsupportedOperationException: JsonObject
+2017-05-15 22:24:00  [ Thread-1:12672 ] - [ ERROR ]  java.lang.ClassCastException: org.json.simple.JSONObject cannot be cast to com.google.gson.JsonObject
+2017-05-15 22:32:55  [ Thread-1:21112 ] - [ ERROR ]  java.lang.ClassCastException: org.json.simple.JSONObject cannot be cast to com.google.gson.JsonObject
+2017-05-15 22:42:31  [ Thread-1:9856 ] - [ ERROR ]  java.lang.UnsupportedOperationException: JsonObject
+2017-05-15 22:45:22  [ main:10 ] - [ ERROR ]  fail to create server socket
+java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:128)
+	at javax.net.DefaultServerSocketFactory.createServerSocket(ServerSocketFactory.java:218)
+	at server.Server.main(Server.java:82)
+2017-05-15 22:45:38  [ Thread-1:10048 ] - [ ERROR ]  java.lang.UnsupportedOperationException: JsonObject
+2017-05-15 22:47:33  [ Thread-1:10310 ] - [ ERROR ]  java.lang.UnsupportedOperationException: JsonObject
+2017-05-15 22:49:07  [ Thread-1:9026 ] - [ ERROR ]  java.lang.UnsupportedOperationException: JsonObject
+2017-05-15 22:50:43  [ Thread-1:9490 ] - [ ERROR ]  java.lang.UnsupportedOperationException: JsonObject
+2017-05-15 22:53:10  [ Thread-1:9765 ] - [ ERROR ]  java.lang.UnsupportedOperationException: JsonObject
+2017-05-15 22:53:41  [ Thread-1:8813 ] - [ ERROR ]  java.lang.UnsupportedOperationException: JsonObject
+2017-05-15 23:00:14  [ Thread-1:2161 ] - [ ERROR ]  java.lang.UnsupportedOperationException: JsonObject
+2017-05-15 23:00:44  [ Thread-1:1844 ] - [ ERROR ]  java.lang.UnsupportedOperationException: JsonObject
+2017-05-15 23:04:12  [ Thread-1:2270 ] - [ ERROR ]  java.lang.UnsupportedOperationException: JsonObject

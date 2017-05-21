@@ -1,0 +1,36 @@
+2017-05-17 13:34:32  [ main:3 ] - [ ERROR ]  error test log
+2017-05-17 13:34:54  [ main:3 ] - [ ERROR ]  error test log
+2017-05-17 13:34:54  [ main:31 ] - [ ERROR ]  fail to create server socket
+java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:128)
+	at javax.net.DefaultServerSocketFactory.createServerSocket(ServerSocketFactory.java:218)
+	at server.Server.main(Server.java:82)
+2017-05-17 13:36:23  [ main:2 ] - [ ERROR ]  error test log
+2017-05-17 13:39:29  [ main:3 ] - [ ERROR ]  error test log
+2017-05-17 13:39:45  [ main:3 ] - [ ERROR ]  error test log
+2017-05-17 13:40:17  [ main:2 ] - [ ERROR ]  error test log
+2017-05-17 13:40:17  [ main:40 ] - [ ERROR ]  fail to create server socket
+java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:128)
+	at javax.net.DefaultServerSocketFactory.createServerSocket(ServerSocketFactory.java:218)
+	at server.Server.main(Server.java:82)
+2017-05-17 13:43:16  [ main:3 ] - [ ERROR ]  error test log
+2017-05-17 13:43:29  [ main:3 ] - [ ERROR ]  error test log
+2017-05-17 13:45:22  [ main:3 ] - [ ERROR ]  error test log
+2017-05-17 13:45:42  [ main:12 ] - [ ERROR ]  fail to create server socket
+java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:128)
+	at javax.net.DefaultServerSocketFactory.createServerSocket(ServerSocketFactory.java:218)
+	at server.Server.main(Server.java:82)

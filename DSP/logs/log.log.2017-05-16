@@ -1,0 +1,70 @@
+2017-05-16 16:23:17  [ Timer-0:0 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-16 16:23:17  [ main:30 ] - [ DEBUG ]  ip of server:0.0.0.0
+2017-05-16 16:23:19  [ Thread-1:2988 ] - [ DEBUG ]  serverClient invoked
+2017-05-16 16:23:20  [ Thread-1:3227 ] - [ ERROR ]  java.lang.UnsupportedOperationException: JsonObject
+2017-05-16 16:26:54  [ Timer-0:0 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-16 16:26:54  [ main:7 ] - [ DEBUG ]  ip of server:0.0.0.0
+2017-05-16 16:26:58  [ Thread-1:3118 ] - [ DEBUG ]  serverClient invoked
+2017-05-16 16:28:40  [ Timer-0:0 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-16 16:28:40  [ main:15 ] - [ DEBUG ]  ip of server:0.0.0.0
+2017-05-16 16:28:43  [ Thread-1:3565 ] - [ DEBUG ]  serverClient invoked
+2017-05-16 16:29:14  [ Timer-0:0 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-16 16:29:14  [ main:9 ] - [ DEBUG ]  ip of server:0.0.0.0
+2017-05-16 16:29:16  [ Thread-1:2203 ] - [ DEBUG ]  serverClient invoked
+2017-05-16 16:29:16  [ Thread-1:2304 ] - [ ERROR ]  java.lang.UnsupportedOperationException: JsonObject
+2017-05-16 16:29:33  [ Timer-0:0 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-16 16:29:33  [ main:10 ] - [ DEBUG ]  ip of server:0.0.0.0
+2017-05-16 16:29:36  [ Thread-1:2207 ] - [ DEBUG ]  serverClient invoked
+2017-05-16 16:38:40  [ Timer-0:0 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-16 16:38:40  [ main:8 ] - [ DEBUG ]  ip of server:0.0.0.0
+2017-05-16 16:38:43  [ Thread-1:3168 ] - [ DEBUG ]  serverClient invoked
+2017-05-16 16:42:08  [ Timer-0:0 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-16 16:42:08  [ main:10 ] - [ DEBUG ]  ip of server:0.0.0.0
+2017-05-16 16:43:39  [ Timer-0:0 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-16 16:43:39  [ main:23 ] - [ DEBUG ]  ip of server:0.0.0.0
+2017-05-16 16:50:19  [ Timer-0:0 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-16 16:50:19  [ main:24 ] - [ DEBUG ]  ip of server:0.0.0.0
+2017-05-16 16:50:28  [ Thread-1:8989 ] - [ DEBUG ]  serverClient invoked
+2017-05-16 16:50:29  [ Thread-1:9268 ] - [ ERROR ]  java.lang.NullPointerException
+2017-05-16 17:00:19  [ Timer-0:600011 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-16 17:01:44  [ Timer-0:0 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-16 17:01:44  [ main:15 ] - [ ERROR ]  fail to create server socket
+java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:128)
+	at javax.net.DefaultServerSocketFactory.createServerSocket(ServerSocketFactory.java:218)
+	at server.Server.main(Server.java:82)
+2017-05-16 17:01:51  [ Timer-0:0 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-16 17:01:51  [ main:7 ] - [ ERROR ]  fail to create server socket
+java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:128)
+	at javax.net.DefaultServerSocketFactory.createServerSocket(ServerSocketFactory.java:218)
+	at server.Server.main(Server.java:82)
+2017-05-16 17:02:01  [ Timer-0:0 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-16 17:02:01  [ main:8 ] - [ DEBUG ]  ip of server:0.0.0.0
+2017-05-16 17:02:05  [ Thread-1:4100 ] - [ DEBUG ]  serverClient invoked
+2017-05-16 17:03:38  [ Timer-0:0 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-16 17:03:38  [ main:12 ] - [ DEBUG ]  ip of server:0.0.0.0
+2017-05-16 17:03:42  [ Thread-1:3104 ] - [ DEBUG ]  serverClient invoked
+2017-05-16 17:13:38  [ Timer-0:600012 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-16 17:14:09  [ Timer-0:0 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-16 17:14:09  [ main:7 ] - [ DEBUG ]  ip of server:0.0.0.0
+2017-05-16 17:14:12  [ Thread-1:3068 ] - [ DEBUG ]  serverClient invoked
+2017-05-16 17:18:00  [ Thread-2:231331 ] - [ DEBUG ]  serverClient invoked
+2017-05-16 17:22:32  [ Timer-0:0 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-16 17:22:32  [ main:15 ] - [ DEBUG ]  ip of server:0.0.0.0
+2017-05-16 17:22:34  [ Thread-1:2738 ] - [ DEBUG ]  serverClient invoked
+2017-05-16 17:22:37  [ Thread-2:5366 ] - [ DEBUG ]  serverClient invoked
+2017-05-16 17:29:49  [ Timer-0:0 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-16 17:29:49  [ main:8 ] - [ DEBUG ]  ip of server:0.0.0.0
+2017-05-16 17:29:52  [ Thread-1:2901 ] - [ DEBUG ]  serverClient invoked
+2017-05-16 17:29:59  [ Thread-2:9682 ] - [ DEBUG ]  serverClient invoked
+2017-05-16 17:32:09  [ Thread-3:139812 ] - [ DEBUG ]  serverClient invoked
+2017-05-16 17:32:56  [ Thread-4:186642 ] - [ DEBUG ]  serverClient invoked

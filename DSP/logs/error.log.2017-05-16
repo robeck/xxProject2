@@ -1,0 +1,21 @@
+2017-05-16 16:23:20  [ Thread-1:3227 ] - [ ERROR ]  java.lang.UnsupportedOperationException: JsonObject
+2017-05-16 16:29:16  [ Thread-1:2304 ] - [ ERROR ]  java.lang.UnsupportedOperationException: JsonObject
+2017-05-16 16:50:29  [ Thread-1:9268 ] - [ ERROR ]  java.lang.NullPointerException
+2017-05-16 17:01:44  [ main:15 ] - [ ERROR ]  fail to create server socket
+java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:128)
+	at javax.net.DefaultServerSocketFactory.createServerSocket(ServerSocketFactory.java:218)
+	at server.Server.main(Server.java:82)
+2017-05-16 17:01:51  [ main:7 ] - [ ERROR ]  fail to create server socket
+java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:128)
+	at javax.net.DefaultServerSocketFactory.createServerSocket(ServerSocketFactory.java:218)
+	at server.Server.main(Server.java:82)

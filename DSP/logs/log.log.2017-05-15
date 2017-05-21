@@ -1,0 +1,117 @@
+2017-05-15 21:01:48  [ main:0 ] - [ DEBUG ]  debug test log
+2017-05-15 21:01:48  [ main:0 ] - [ ERROR ]  error test log
+2017-05-15 21:01:48  [ Timer-0:11 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-15 21:01:48  [ main:20 ] - [ DEBUG ]  ip of server:0.0.0.0
+2017-05-15 21:02:50  [ Thread-1:62034 ] - [ DEBUG ]  serverClient invoked
+2017-05-15 21:07:36  [ Thread-2:348566 ] - [ DEBUG ]  serverClient invoked
+2017-05-15 21:09:04  [ Thread-3:436155 ] - [ DEBUG ]  serverClient invoked
+2017-05-15 21:10:14  [ Timer-0:0 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-15 21:10:14  [ main:9 ] - [ DEBUG ]  ip of server:0.0.0.0
+2017-05-15 21:10:33  [ Thread-1:19495 ] - [ DEBUG ]  serverClient invoked
+2017-05-15 21:10:34  [ Thread-1:19588 ] - [ ERROR ]  java.io.EOFException
+2017-05-15 21:10:43  [ Thread-2:29382 ] - [ DEBUG ]  serverClient invoked
+2017-05-15 21:10:43  [ Thread-2:29427 ] - [ ERROR ]  java.lang.UnsupportedOperationException: JsonObject
+2017-05-15 21:11:08  [ Timer-0:0 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-15 21:11:08  [ main:10 ] - [ DEBUG ]  ip of server:0.0.0.0
+2017-05-15 21:11:08  [ Timer-0:0 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-15 21:11:08  [ main:13 ] - [ ERROR ]  fail to create server socket
+java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:128)
+	at javax.net.DefaultServerSocketFactory.createServerSocket(ServerSocketFactory.java:218)
+	at server.Server.main(Server.java:77)
+2017-05-15 21:11:15  [ Timer-0:0 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-15 21:11:15  [ main:8 ] - [ DEBUG ]  ip of server:0.0.0.0
+2017-05-15 21:11:26  [ Thread-1:10967 ] - [ DEBUG ]  serverClient invoked
+2017-05-15 21:11:27  [ Thread-1:11069 ] - [ ERROR ]  java.lang.UnsupportedOperationException: JsonObject
+2017-05-15 21:11:55  [ Thread-2:40017 ] - [ DEBUG ]  serverClient invoked
+2017-05-15 21:11:56  [ Thread-2:40047 ] - [ ERROR ]  java.lang.UnsupportedOperationException: JsonObject
+2017-05-15 21:12:21  [ Timer-0:0 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-15 21:12:21  [ main:7 ] - [ DEBUG ]  ip of server:0.0.0.0
+2017-05-15 21:13:04  [ Thread-1:42083 ] - [ DEBUG ]  serverClient invoked
+2017-05-15 21:13:04  [ Thread-1:42167 ] - [ ERROR ]  java.io.EOFException
+2017-05-15 21:13:12  [ Thread-2:50728 ] - [ DEBUG ]  serverClient invoked
+2017-05-15 21:13:12  [ Thread-2:50758 ] - [ ERROR ]  java.lang.UnsupportedOperationException: JsonObject
+2017-05-15 21:13:52  [ Thread-3:90221 ] - [ DEBUG ]  serverClient invoked
+2017-05-15 21:13:52  [ Thread-3:90233 ] - [ ERROR ]  java.lang.UnsupportedOperationException: JsonObject
+2017-05-15 22:15:11  [ Timer-0:0 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-15 22:15:11  [ main:32 ] - [ DEBUG ]  ip of server:0.0.0.0
+2017-05-15 22:15:39  [ Thread-1:27186 ] - [ DEBUG ]  serverClient invoked
+2017-05-15 22:15:39  [ Thread-1:27414 ] - [ ERROR ]  java.lang.UnsupportedOperationException: JsonObject
+2017-05-15 22:20:00  [ Timer-0:0 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-15 22:20:00  [ main:9 ] - [ DEBUG ]  ip of server:0.0.0.0
+2017-05-15 22:20:12  [ Thread-1:12013 ] - [ DEBUG ]  serverClient invoked
+2017-05-15 22:23:47  [ Timer-0:0 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-15 22:23:47  [ main:8 ] - [ DEBUG ]  ip of server:0.0.0.0
+2017-05-15 22:24:00  [ Thread-1:12576 ] - [ DEBUG ]  serverClient invoked
+2017-05-15 22:24:00  [ Thread-1:12672 ] - [ ERROR ]  java.lang.ClassCastException: org.json.simple.JSONObject cannot be cast to com.google.gson.JsonObject
+2017-05-15 22:30:09  [ Timer-0:0 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-15 22:30:09  [ main:9 ] - [ DEBUG ]  ip of server:0.0.0.0
+2017-05-15 22:32:34  [ Timer-0:0 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-15 22:32:34  [ main:9 ] - [ DEBUG ]  ip of server:0.0.0.0
+2017-05-15 22:32:55  [ Thread-1:21021 ] - [ DEBUG ]  serverClient invoked
+2017-05-15 22:32:55  [ Thread-1:21112 ] - [ ERROR ]  java.lang.ClassCastException: org.json.simple.JSONObject cannot be cast to com.google.gson.JsonObject
+2017-05-15 22:33:56  [ Timer-0:0 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-15 22:33:56  [ main:9 ] - [ DEBUG ]  ip of server:0.0.0.0
+2017-05-15 22:34:06  [ Thread-1:9430 ] - [ DEBUG ]  serverClient invoked
+2017-05-15 22:35:51  [ Timer-0:0 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-15 22:35:51  [ main:7 ] - [ DEBUG ]  ip of server:0.0.0.0
+2017-05-15 22:36:01  [ Thread-1:10369 ] - [ DEBUG ]  serverClient invoked
+2017-05-15 22:41:08  [ Timer-0:0 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-15 22:41:08  [ main:8 ] - [ DEBUG ]  ip of server:0.0.0.0
+2017-05-15 22:41:19  [ Thread-1:10929 ] - [ DEBUG ]  serverClient invoked
+2017-05-15 22:42:21  [ Timer-0:0 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-15 22:42:21  [ main:15 ] - [ DEBUG ]  ip of server:0.0.0.0
+2017-05-15 22:42:31  [ Thread-1:9758 ] - [ DEBUG ]  serverClient invoked
+2017-05-15 22:42:31  [ Thread-1:9856 ] - [ ERROR ]  java.lang.UnsupportedOperationException: JsonObject
+2017-05-15 22:45:03  [ Timer-0:0 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-15 22:45:03  [ main:8 ] - [ DEBUG ]  ip of server:0.0.0.0
+2017-05-15 22:45:22  [ Timer-0:0 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-15 22:45:22  [ main:10 ] - [ ERROR ]  fail to create server socket
+java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:128)
+	at javax.net.DefaultServerSocketFactory.createServerSocket(ServerSocketFactory.java:218)
+	at server.Server.main(Server.java:82)
+2017-05-15 22:45:28  [ Timer-0:1 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-15 22:45:28  [ main:9 ] - [ DEBUG ]  ip of server:0.0.0.0
+2017-05-15 22:45:38  [ Thread-1:9959 ] - [ DEBUG ]  serverClient invoked
+2017-05-15 22:45:38  [ Thread-1:10048 ] - [ ERROR ]  java.lang.UnsupportedOperationException: JsonObject
+2017-05-15 22:47:23  [ Timer-0:0 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-15 22:47:23  [ main:11 ] - [ DEBUG ]  ip of server:0.0.0.0
+2017-05-15 22:47:33  [ Thread-1:10211 ] - [ DEBUG ]  serverClient invoked
+2017-05-15 22:47:33  [ Thread-1:10310 ] - [ ERROR ]  java.lang.UnsupportedOperationException: JsonObject
+2017-05-15 22:48:58  [ Timer-0:0 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-15 22:48:58  [ main:9 ] - [ DEBUG ]  ip of server:0.0.0.0
+2017-05-15 22:49:06  [ Thread-1:8922 ] - [ DEBUG ]  serverClient invoked
+2017-05-15 22:49:07  [ Thread-1:9026 ] - [ ERROR ]  java.lang.UnsupportedOperationException: JsonObject
+2017-05-15 22:50:34  [ Timer-0:1 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-15 22:50:34  [ main:10 ] - [ DEBUG ]  ip of server:0.0.0.0
+2017-05-15 22:50:43  [ Thread-1:9402 ] - [ DEBUG ]  serverClient invoked
+2017-05-15 22:50:43  [ Thread-1:9490 ] - [ ERROR ]  java.lang.UnsupportedOperationException: JsonObject
+2017-05-15 22:53:00  [ Timer-0:0 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-15 22:53:00  [ main:11 ] - [ DEBUG ]  ip of server:0.0.0.0
+2017-05-15 22:53:10  [ Thread-1:9658 ] - [ DEBUG ]  serverClient invoked
+2017-05-15 22:53:10  [ Thread-1:9765 ] - [ ERROR ]  java.lang.UnsupportedOperationException: JsonObject
+2017-05-15 22:53:32  [ Timer-0:0 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-15 22:53:32  [ main:5 ] - [ DEBUG ]  ip of server:0.0.0.0
+2017-05-15 22:53:41  [ Thread-1:8721 ] - [ DEBUG ]  serverClient invoked
+2017-05-15 22:53:41  [ Thread-1:8813 ] - [ ERROR ]  java.lang.UnsupportedOperationException: JsonObject
+2017-05-15 23:00:12  [ Timer-0:0 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-15 23:00:12  [ main:12 ] - [ DEBUG ]  ip of server:0.0.0.0
+2017-05-15 23:00:14  [ Thread-1:2039 ] - [ DEBUG ]  serverClient invoked
+2017-05-15 23:00:14  [ Thread-1:2161 ] - [ ERROR ]  java.lang.UnsupportedOperationException: JsonObject
+2017-05-15 23:00:42  [ Timer-0:1 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-15 23:00:42  [ main:9 ] - [ DEBUG ]  ip of server:0.0.0.0
+2017-05-15 23:00:44  [ Thread-1:1735 ] - [ DEBUG ]  serverClient invoked
+2017-05-15 23:00:44  [ Thread-1:1844 ] - [ ERROR ]  java.lang.UnsupportedOperationException: JsonObject
+2017-05-15 23:04:10  [ Timer-0:0 ] - [ INFO ]  Timer-0 - current server selected as target exchange server, ignored...
+2017-05-15 23:04:10  [ main:14 ] - [ DEBUG ]  ip of server:0.0.0.0
+2017-05-15 23:04:12  [ Thread-1:2172 ] - [ DEBUG ]  serverClient invoked
+2017-05-15 23:04:12  [ Thread-1:2270 ] - [ ERROR ]  java.lang.UnsupportedOperationException: JsonObject
