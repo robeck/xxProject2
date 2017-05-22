@@ -39,6 +39,10 @@ import static org.apache.commons.lang3.RandomStringUtils.randomAlphanumeric;
  * @author xiangl14@student.unimelb.edu.au
  * 
  */
+
+//还没有测试secure链接
+//subscribe，unsubscribe 没有实现
+//query 还需要测试
 public class Server extends Thread{
 
     private static Logger logger = Logger.getRootLogger();
@@ -226,9 +230,9 @@ public class Server extends Thread{
         
 
 //        open server socket and accept each client
-        try{System.setProperty("javax.net.ssl.keyStore","bin/server.jks");
+        try{System.setProperty("javax.net.ssl.keyStore","bin/Server.jks");
         
-            System.setProperty("javax.net.ssl.trustkeyStore", "bin/server.jks");
+            System.setProperty("javax.net.ssl.trustkeyStore", "bin/Server.jks");
 		//Password to access the private key from the keystore file
 		    System.setProperty("javax.net.ssl.keyStorePassword","comp90015");
 
@@ -785,7 +789,7 @@ public class Server extends Thread{
             r.setEzServer(serverOptions.getHostname() + ":" + serverOptions.getPort());
             Resource validResource = r.toValid();//silently remove illegal chars: '\0' and whitespaces
             resourceSet.add(validResource);//overwriting existing Resource with the same primary key
-            
+            System.out.println("unsecure"+resourceSet);
 
             return new RespSuccess();
              }
@@ -903,9 +907,17 @@ public class Server extends Thread{
                     if ("localhost".equals(h.getHostname()) || "127.0.0.1".equals(h.getHostname())){
                         h.setHostname(serverOptions.getHostname());
                     }
+                    if(flag==true){
                     if (!serverRecords.contains(h)){
                         serverRecords.add(h);//add non-duplicate server records
+                      }
+                    }else
+                       {
+                    	if (!secureServerRecords.contains(h)){
+                            secureServerRecords.add(h);//add non-duplicate server records
+                       }
                     }
+                    	
                 }
                 resp = new RespSuccess();
             }
@@ -995,6 +1007,8 @@ public class Server extends Thread{
      * @param host
      * @return
      */
+    
+    //这里还需要修改
     private static Optional<Resp> exchangeWithHost(HostInfo host) {
         Gson gson = new Gson();
         Optional<Resp> resp = Optional.empty();

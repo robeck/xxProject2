@@ -20,6 +20,7 @@ import java.util.Set;
 @Getter
 @Setter
 public class QuerySuccess extends RespSuccess {
+	
     private Set<Resource>  resourceSet;
     private int resultSize;
     

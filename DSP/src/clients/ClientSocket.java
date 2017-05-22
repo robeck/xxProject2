@@ -5,6 +5,10 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 import java.net.UnknownHostException;
+
+import javax.net.ssl.SSLSocket;
+import javax.net.ssl.SSLSocketFactory;
+
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;
 import org.apache.commons.cli.DefaultParser;
@@ -29,7 +33,7 @@ public class ClientSocket {
 //	private static int portConnect = 3009;
 //	private static String ip = "localhost";
   private static String ip = "localhost";
-  private static int portConnect = 3780;
+  private static int portConnect = 3781;
 /**
  * 
  * @param args
@@ -49,6 +53,7 @@ public class ClientSocket {
 		options.addOption("query", "query for resources from server" ); 
 		options.addOption("remove", "remove resource from server" ); 
 		options.addOption("share", "share resource on server" ); 
+		options.addOption("secure","connect secure socket");
 		  
 		Option name = Option.builder("name").argName("arg").hasArg().desc("resource name").build();
 		options.addOption(name);
@@ -70,8 +75,7 @@ public class ClientSocket {
 		options.addOption(tags);
 		Option uri = Option.builder("uri").argName("args").hasArg().desc("resource URI").build();
 		options.addOption(uri);	
-		Option secure = Option.builder("secure").argName("args").hasArg().decs("secure client connect..").build();
-		options.addOption(secure);
+		
 		
 		// Parse the program arguments  
 		CommandLine commandLine = parser.parse( options, args );  
@@ -83,12 +87,70 @@ public class ClientSocket {
 			 ip = commandLine.getOptionValue("host");
 		}
 		
-		if(commandLine.hasOption("secure")){
+		if(commandLine.hasOption("secure"))
+		{
 			try{
-				SSLSocketFactory sslsocketfactor = 
+				
+			System.setProperty("javax.net.ssl.keyStore", "bin/Client.jks");
+			
+			System.setProperty("javax.net.ssl.trustStore", "bin/Client.jks");
+			
+			System.setProperty("javax.net.ssl.keyStorePassword","comp90015");
+			
+			
+			System.setProperty("javax.net.debug","all");
+			
+			//Create SSL socket and connect it to the remote server 
+			SSLSocketFactory sslsocketfactory = (SSLSocketFactory) SSLSocketFactory.getDefault();
+			SSLSocket sslsocket = (SSLSocket) sslsocketfactory.createSocket(ip, portConnect);
+			
+			if(commandLine.hasOption("debug")){
+				System.out.println("setting debug on");
+				System.out.println("Doing "+ args[0] + " to host " +ip+ ": " + portConnect);
+			}
+			
+			DataInputStream input = new DataInputStream(sslsocket.getInputStream());
+			DataOutputStream output = new DataOutputStream(sslsocket.getOutputStream());
+			
+			
+			JSONObject command = new JSONObject();
+		    command = ClientCommand.toJSON(commandLine);
+		    
+//		    System.out.println(command.toJSONString());
+		    output.writeUTF(command.toJSONString());
+	    	output.flush();
+			
+			
+
+	    	if(commandLine.hasOption("fetch")){
+	    		Download.DownloadFile(input, commandLine);
+	    	}else{
+	    		String response = "";
+	    		do{
+	    						
+	    			String responsePart;
+					responsePart = input.readUTF();	
+	    			response += responsePart + "\n";
+	    			//Thread.sleep(1000);
+	    			
+	    		}while(input.available() > 0);
+	    		//Debug command line option
+				if(commandLine.hasOption("debug")){
+					System.out.println("RECEIVED: "+response);
+				}
+	    	}
+
+
+//			System.out.println("RECEIVED: "+ "all done");
+
+				sslsocket.close();
+			}catch(IOException e)
+			{
+				e.printStackTrace();
 			}
 		}
 		
+		else{
 		try{
 		//•	创建一个 Socket 实例：构造函数向指定的远程主机和端口建立一个 TCP 连接；
 		Socket client = new Socket(ip,portConnect);
@@ -118,6 +180,7 @@ public class ClientSocket {
 //        }
 
     	//if command is fetch, download file
+		
     	if(commandLine.hasOption("fetch")){
     		Download.DownloadFile(input, commandLine);
     	}else{
@@ -146,6 +209,7 @@ public class ClientSocket {
 
 		}
   	
+	 }
 	}
 			
 }
